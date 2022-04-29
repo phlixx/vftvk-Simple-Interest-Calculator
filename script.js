@@ -6,11 +6,17 @@ function compute()
     const year = new Date().getFullYear();
     const futureYear = Number(years)+Number(year);
     const result = p*(Number(r)/100*Number(years)+1)-p;
-    
-    var resultElement = document.getElementById("result");
 
-    var resultText = '<br>If you deposit ' + p + ',<br> at an interest rate of ' + r +'%. <br> You will receive an amount of ' + result + ',<br> in the year ' + futureYear;
-    resultElement.innerHTML=resultText;
+    if(Number(p) <= 0) {
+        alert('please enter a positive number!');
+        document.getElementById("principal").focus();
+
+    }
+    else {
+        var resultElement = document.getElementById("result");
+        var resultText = '<br>If you deposit ' + p + ',<br> at an interest rate of ' + r +'%. <br> You will receive an amount of ' + result + ',<br> in the year ' + futureYear;
+        resultElement.innerHTML=resultText;
+    }
 }
 function displayRate()
 {
