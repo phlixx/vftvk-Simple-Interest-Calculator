@@ -1,4 +1,25 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:white;
+    margin: auto;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    width: 500px;
+    font-family:sans-serif;
+}
+h1{color:grey;}
 
-
+html {
+    background-color: black;
+}
+form {
+    width: 320px;
+    margin:auto;
+    align-items: center;
+}
+label {
+display: inline-block;
+  width: 100px;
+  text-align: left;
+}
